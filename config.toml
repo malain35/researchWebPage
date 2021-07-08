@@ -1,9 +1,11 @@
 baseurl = "https://www.scss.tcd.ie/~alainm/"  # End your URL with a `/` trailing slash.
 title = "Martin Alain"
-copyright = "&copy; 2016 Martin Alain"
+copyright = "&copy; 2021 Martin Alain"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+
+# publishDir = "\\staffpgstore.scss.tcd.ie/alainm/www"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
