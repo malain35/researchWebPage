@@ -129,6 +129,11 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "mailto:alainm@scss.tcd.ie"
 
+  [[params.social]]
+   icon = "github"
+   icon_pack = "fa"
+   link = "https://github.com/malain35/"
+
 #  [[params.social]]
 #    icon = "twitter"
 #    icon_pack = "fa"
@@ -149,10 +154,7 @@ defaultContentLanguageInSubdir = false
     icon_pack = "ai"
     link = "https://www.mendeley.com/profiles/martin-alain/"
 
-#  [[params.social]]
-#    icon = "github"
-#    icon_pack = "fa"
-#    link = "//github.com/gcushen"
+
 
 
 

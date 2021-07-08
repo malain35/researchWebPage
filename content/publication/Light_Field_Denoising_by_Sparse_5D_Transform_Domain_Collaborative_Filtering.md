@@ -18,13 +18,13 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-#[[url_custom]]
-#name = "BibTex"
-#url = "bib/AlainEUSIPCO2014.bib"
+[[url_custom]]
+name = "BibTex"
+url = "bib/AlainMMSP2018.bib"
 
-#[[url_custom]]
-#name = "IEEE Xplore"
-#url = "http://ieeexplore.ieee.org/document/6952021/"
+[[url_custom]]
+name = "IEEE Xplore"
+url = "https://ieeexplore.ieee.org/document/8122232/"
 
 [[url_custom]]
 name = "V-SENSE"
@@ -36,6 +36,14 @@ caption = ""
 
 +++
 
+This paper was given a <a href="https://www.beds.ac.uk/mmsp2017/awards">Top 10% Paper Award</a> at the MMSP 2017 conference held in Luton, UK.
+
+For the super-resolution extension SR-LFBM5D, see <a href="">this page</a>.
+
+<h2>Implementation</h2>
+
+The C/C++ source code is available on <a href="https://github.com/malain35/LFBM5D">github</a>.
+
 <h2>Additional results</h2>
 
 Visual results complementing the paper are shown below.
@@ -43,36 +51,74 @@ We then show in Tables 1 and 2 <a href="#avgres">the average results</a> present
 The corresponding <a href="#detres">detailed results</a> are shown in Table 3 and 4.
 
 <h3 id="visres">Visual results</h3>
+We show in videos below (click on an image to start a video) side by side comparisons of noisy and de-noised light fields for different noise levels (&sigma; corresponds to the white gaussian noise standard deviation). On the top left corner of each video is highlighted the sub-aperture image being displayed. Note that some videos may exhibit encoding artifacts.
 
-We show here side by side comparisons of noisy and de-noised light fields.
-On the top left corner of each video is highlighted the sub-aperture image being displayed. Note that some videos may exhibit encoding artifacts.
+<table style="text-align: center; width: 100%;" border="0" cellspacing="2" cellpadding="2" align="center">
+<tbody>
+<tr>
+<td></td>
+<td>&sigma;=10</td>
+<td>&sigma;=30</td>
+<td>&sigma;=50</td>
+</tr>
+<tr>
+<td>Lego Knights</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_LegoKnights_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-300x300.png" alt="&sigma;=10" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_LegoKnights_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-1-300x300.png" alt="&sigma;=30" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_LegoKnights_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-2-300x300.png" alt="&sigma;=50" width="100" height="100"></a></td>
+</tr>
+<tr>
+<td>Amethyst</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Amethyst_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-3-300x300.png" alt="&sigma;=10" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Amethyst_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-4-300x300.png" alt="&sigma;=30" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Amethyst_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-5-300x300.png" alt="&sigma;=50" width="100" height="100"></a></td>
+</tr>
+<tr>
+<td>Tarot Cards and Crystal Ball (Small Angle)</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-6-300x300.png" alt="&sigma;=10" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-7-300x300.png" alt="&sigma;=30" width="100" height="100"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_0_0-8-300x300.png" alt="&sigma;=50" width="100" height="100"></a></td>
+</tr>
+<tr>
+<td>Bikes</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Bikes_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-300x208.png" alt="&sigma;=10" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Bikes_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-1-300x208.png" alt="&sigma;=30" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Bikes_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-2-300x208.png" alt="&sigma;=50" width="100" height="70"></a></td>
+</tr>
+<tr>
+<td>Magnets 1</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Magnets_1_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-3-300x208.png" alt="&sigma;=10" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Magnets_1_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-4-300x208.png" alt="&sigma;=30" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Magnets_1_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-5-300x208.png" alt="&sigma;=50" width="100" height="70"></a></td>
+</tr>
+<tr>
+<td>Vespa</td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Vespa_sigma10.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-6-300x208.png" alt="&sigma;=10" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Vespa_sigma30.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-7-300x208.png" alt="&sigma;=30" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Vespa_sigma50.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_7_7-8-300x208.png" alt="&sigma;=50" width="100" height="70"></a></td>
+</tr>
+</tbody>
+</table>
 
-First, we show results for different synthetic noise levels where &#963; corresponds to the white gaussian noise standard deviation (click on a &#963; to start a video).
+Below, we show results for lenslet camera (Lytro Illum) noise removal.
 
-<ul>
-  <li>Lego Knights: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma50.mp4">&#963;=50</a>
-  </li>
-  <li>Amethyst: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma50.mp4">&#963;=50</a>
-  </li>
-  <li>Tarot Cards and Crystal Ball (Small Angle): <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma50.mp4">&#963;=50</a>
-  </li>
-  <li>Bikes: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma50.mp4">&#963;=50</a>
-  </li>
-  <li>Magnets 1: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma50.mp4">&#963;=50</a>
-  </li>
-  <li>Vespa: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma50.mp4">&#963;=50</a>
-  </li>
-</ul>
+<table style="text-align: center; width: 100%;" border="0" cellspacing="2" cellpadding="2" align="center">
+<tbody>
+<tr>
+<td>Color Chart 1</td>
+<td>Desktop</td>
+<td>ISO Chart 12</td>
+<td>Magnets 1</td>
+</tr>
+<tr>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Color_Chart_1.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_07_07-300x208.png" alt="Color Chart 1" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Desktop.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_07_07-1-300x208.png" alt="Desktop" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_ISO_Chart_12.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_07_07-2-300x208.png" alt="ISO Chart 12" width="100" height="70"></a></td>
+<td><a href="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/LFcomparisonSidebySide_Magnets_1.mp4"><img src="https://v-sense.scss.tcd.ie/wp-content/uploads/2017/08/SAI_07_07-3-300x208.png" alt="Magnets 1" width="100" height="70"></a></td>
+</tr>
+</tbody>
+</table>
 
-
-Below, we show results for lenslet camera (Lytro) noise removal.
-
-<ul>
-  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Color_Chart_1.mp4">Color Chart 1</a></li>
-  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Desktop.mp4">Desktop</a></li>
-  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_ISO_Chart_12.mp4">ISO Chart 12</a></li>
-  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1.mp4">Magnets  1</a></li>
-</ul>
 
 <h3 id="avgres">Average PSNR results</h3>
 
@@ -220,3 +266,35 @@ Values highlighted in bold correspond to the best performing method for a given 
   
 </table>
 
+
+<!-- <h3 id="visres">Visual results</h3>
+
+We show here side by side comparisons of noisy and de-noised light fields.
+On the top left corner of each video is highlighted the sub-aperture image being displayed. Note that some videos may exhibit encoding artifacts.
+
+First, we show results for different synthetic noise levels where &#963; corresponds to the white gaussian noise standard deviation (click on a &#963; to start a video).
+
+<ul>
+  <li>Lego Knights: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_LegoKnights_sigma50.mp4">&#963;=50</a>
+  </li>
+  <li>Amethyst: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Amethyst_sigma50.mp4">&#963;=50</a>
+  </li>
+  <li>Tarot Cards and Crystal Ball (Small Angle): <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_TarotCardsandCrystalBall_SmallAngle_sigma50.mp4">&#963;=50</a>
+  </li>
+  <li>Bikes: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Bikes_sigma50.mp4">&#963;=50</a>
+  </li>
+  <li>Magnets 1: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1_sigma50.mp4">&#963;=50</a>
+  </li>
+  <li>Vespa: <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma10.mp4">&#963;=10</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma30.mp4">&#963;=30</a> / <a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Vespa_sigma50.mp4">&#963;=50</a>
+  </li>
+</ul>
+
+
+Below, we show results for lenslet camera (Lytro) noise removal.
+
+<ul>
+  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Color_Chart_1.mp4">Color Chart 1</a></li>
+  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Desktop.mp4">Desktop</a></li>
+  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_ISO_Chart_12.mp4">ISO Chart 12</a></li>
+  <li><a href="https://www.scss.tcd.ie/~alainm/vid/LFBM5D/LFcomparisonSidebySide_Magnets_1.mp4">Magnets  1</a></li>
+</ul> -->

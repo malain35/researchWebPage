@@ -38,15 +38,14 @@ My research is focused on light field imaging technologies, investigating novel 
 ## Light fields imaging technologies
 
 Light fields capture all light rays passing through a given volume of space.
-Compared to traditional 2D imaging system which capture the spatial intensity of the light rays, the 4D light fields also contain the angular direction of light rays.
+Compared to traditional 2D imaging systems which capture the spatial intensity of the light rays, the 4D light fields also contain the angular direction of light rays.
 This additional information allows for multiple applications in different research areas such as image processing, computer vision, and computer graphics, including (but not limited to) the reconstruction of the 3D geometry of a scene, creating new images from virtual point of view, or changing the focus of an image after it is captured.
 Light fields are also a growing topic of interest in the VR/AR community.
 
-Below is an example of a light field captured with a [Lytro Illum](https://www.lytro.com/imaging) camera, which allows for refocusing and changing the perspective.
+Below is an example of a light field captured with a Lytro Illum camera, which allows for refocusing and changing the perspective.
 
-<iframe width='600' height='434' src='https://pictures.lytro.com/Malain/pictures/1249210/embed' frameborder='0' allowfullscreen scrolling='no'></iframe>
+<iframe width='809' height='540' src='https://www.scss.tcd.ie/~alainm/vid/Lytro_example.mp4' frameborder='0' allowfullscreen scrolling='no'></iframe>
 
-You can find more examples of such light fields [here](https://pictures.lytro.com/Malain/albums/207844).
 
 ## Related publications
 

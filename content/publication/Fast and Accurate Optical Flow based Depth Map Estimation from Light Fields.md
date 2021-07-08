@@ -9,7 +9,7 @@ math = true
 publication = "Irish Machine Vision and Image Processing Conference"
 publication_short = "IMVIP 2017"
 publication_types = ["1"]
-selected = false
+selected = true
 title = "Fast and Accurate Optical Flow based Depth Map Estimation from Light Fields"
 url_code = ""
 url_dataset = ""
@@ -36,5 +36,7 @@ image = "headers/LF_point_cloud.png"
 caption = ""
 
 +++
+
+This paper received the <a href="http://imvip2017.cs.nuim.ie/awards">Jonathan Campbell Best Paper Award at The Irish Machine Vision and Image Processing Conference, 2017</a>.
 
 
