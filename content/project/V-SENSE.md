@@ -51,3 +51,13 @@ Below is an example of a light field captured with a Lytro Illum camera, which a
 
 * [Fast and Accurate Optical Flow based Depth Map Estimation from Light Fields]({{< relref "Fast and Accurate Optical Flow based Depth Map Estimation from Light Fields.md" >}})
 * [Light Field Denoising by Sparse 5D Transform Domain Collaborative Filtering]({{< relref "Light_Field_Denoising_by_Sparse_5D_Transform_Domain_Collaborative_Filtering.md" >}})
+* [Light Field Super-Resolution via LFBM5D Sparse Coding]({{< relref "Light_Field_Super_Resolution_via_LFBM5D_Sparse_Coding.md" >}})
+* [A Pipeline for Lenslet Light Field Quality Enhancement]({{< relref "A_Pipeline_for_Lenslet_Light_Field_Quality_Enhancement.md" >}})
+* [Interactive Light Field Tilt-Shift Refocus]({{< relref "Interactive_Light_Field_Tilt-Shift_Refocus.md" >}})
+* [A Study of Light Field Streaming for Interactive Refocusing]({{< relref "A_Study_of_Light_Field_Streaming_for_Interactive_Refocusing.md" >}})
+* [Self-supervised light field view synthesis using cycle consistency]({{< relref "Self-supervised_light_field_view_synthesis_using_cycle_consistency.md" >}})
+* [A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching]({{< relref "A_Spatio-Angular_Binary_Descriptor_for_Fast_Light_Field_Inter_View_Matching.md" >}})
+* [Light Field Style Transfer With Local Angular Consistency]({{< relref "Light_Field_Style_Transfer_With_Local_Angular_Consistency.md" >}})
+* [Focus Guided Light Field Saliency Estimation]({{< relref "Focus_Guided_Light_Field_Saliency_Estimation.md" >}})
+* [A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing]({{< relref "A_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing.md" >}})
+

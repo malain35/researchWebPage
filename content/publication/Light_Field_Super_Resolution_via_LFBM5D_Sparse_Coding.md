@@ -37,7 +37,7 @@ caption = ""
 +++
 
 <h2>Implementation</h2>
-The MATLAB/C/C++ source code is now available on <a href="https://github.com/malain35/LFBM5D/tree/SR">github</a> !
+The MATLAB/C/C++ source code is available on <a href="https://github.com/malain35/LFBM5D/tree/SR">github</a>.
 
 <h2>Additional results</h2>
 Visual results complementing the paper are shown below.
