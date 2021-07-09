@@ -22,9 +22,9 @@ url_video = ""
 #name = "BibTex"
 #url = "bib/MatysiakICIP2018.bib"
 
-#[[url_custom]]
-#name = "IEEE Xplore"
-#url = "http://ieeexplore.ieee.org/document/6952021/"
+[[url_custom]]
+name = "IEEE Xplore"
+url = "https://ieeexplore.ieee.org/document/8451544"
 
 [[url_custom]]
 name = "V-SENSE"
@@ -40,9 +40,9 @@ caption = ""
 <h2>Implementation</h2>
 All of our code is available here (please cite the appropriate papers if you use or adapt these codes in your work):
 
-<a href="https://github.com/V-Sense/LFToolbox-CLIM_VSENSE">RAW data decoding</a>
-<a href="https://github.com/V-Sense/LFToolbox_Recolouring_HPR">Recolouring</a>
-<a href="https://github.com/V-Sense/LFBM5D">Denoising</a>
+- <a href="https://github.com/V-Sense/LFToolbox-CLIM_VSENSE">RAW data decoding</a>
+- <a href="https://github.com/V-Sense/LFToolbox_Recolouring_HPR">Recolouring</a>
+- <a href="https://github.com/V-Sense/LFBM5D">Denoising</a>
 
 <h2>Additional results</h2>
 Our pipeline was applied on a subset of the freely available <a href="https://mmspg.epfl.ch/EPFL-light-field-image-dataset">EPFL</a><sup>1</sup> and <a href="https://www.irisa.fr/temics/demos/lightField/CLIM/DataSoftware.html">INRIA</a><sup>2</sup> datasets.

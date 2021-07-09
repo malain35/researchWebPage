@@ -22,9 +22,9 @@ url_video = ""
 #name = "BibTex"
 #url = "bib/AlainICIP2018.bib"
 
-#[[url_custom]]
-#name = "IEEE Xplore"
-#url = "http://ieeexplore.ieee.org/document/6952021/"
+[[url_custom]]
+name = "IEEE Xplore"
+url = "http://ieeexplore.ieee.org/document/8451162/"
 
 [[url_custom]]
 name = "V-SENSE"

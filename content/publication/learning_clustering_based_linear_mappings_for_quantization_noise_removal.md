@@ -18,9 +18,9 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-[[url_custom]]
-name = "BibTex"
-url = "bib/AlainICIP16.bib"
+#[[url_custom]]
+#name = "BibTex"
+#url = "bib/AlainICIP16.bib"
 
 [[url_custom]]
 name = "IEEE Xplore"

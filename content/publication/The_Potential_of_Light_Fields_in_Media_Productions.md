@@ -13,7 +13,7 @@ selected = false
 title = "The Potential of Light Fields in Media Productions"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://dl.acm.org/doi/10.1145/3355088.3365158"
+url_pdf = "pdf/trottnow_2019.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
@@ -24,9 +24,9 @@ tags = ["SAUCE"]
 #name = "BibTex"
 #url = "bib/AlainICIP2018.bib"
 
-#[[url_custom]]
-#name = "IEEE Xplore"
-#url = "http://ieeexplore.ieee.org/document/6952021/"
+[[url_custom]]
+name = "ACM"
+url = "https://dl.acm.org/doi/10.1145/3355088.3365158"
 
 [[url_custom]]
 name = "V-SENSE"

@@ -37,7 +37,8 @@
 # Publications widget
 
 - id: more_publications
-  translation: More Publications
+  translation: View all
+  # translation: More Publications
 
 # Posts widget
 
